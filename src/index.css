@@ -6,5 +6,5 @@ html, body, #root {
 }
 
 body {
-  @apply bg-white text-gray-800 antialiased;
+  @apply bg-black text-gray-200 antialiased;
 }
