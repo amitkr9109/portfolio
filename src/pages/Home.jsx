@@ -11,12 +11,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">Hi, I’m Amit 👋</h1>
           <p className="mt-3 sm:mt-4 md:mt-6 max-w-2xl text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">Full Stack Web developer building performance, accessible, and responsive web experiences.</p>
-          <div className="paragraph-div lg:w-1/2 lg:pt-32 pt-5">
+          <div className="paragraph-div lg:w-1/2 lg:pt-20 pt-5">
             <p className='text-sm sm:text-base md:text-lg text-gray-500 '>I build fast, accessible, and responsive web applications using React.js, Node.js, and Express.js. I am passionate about creating smooth user interfaces, maintaining excellent UI/UX, and writing clean, maintainable code. I craft modern user experiences while also delivering scalable backend integrations when needed.</p>
           </div>
         </div>
-        <div className="image group relative overflow-hidden rounded-xl lg:w-1/2 lg:h-[70vh] w-full h-[50vh] hover:border-2 hover:border-green-400">
-          <img className='w-full h-full object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105' src="./image-1.jpg" alt="Amit Kumar" />
+        <div className="image group relative overflow-hidden rounded-xl lg:w-1/2 lg:h-[60vh] w-full h-[40vh] hover:border-2 hover:border-green-400">
+          <img className='w-full h-full object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105' src="https://i.postimg.cc/50tWr9F0/image-1.jpg" alt="Amit Kumar" />
           <div className="pointer-events-none absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-60"></div>
         </div>
       </section>
