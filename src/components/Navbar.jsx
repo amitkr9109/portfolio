@@ -40,6 +40,7 @@ export default function Navbar() {
           <NavLink to="/projects" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Projects</NavLink>
           <NavLink to="/achievements" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Achievements</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Contact</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>About</NavLink>
         </nav>
 
         {/* Mobile hamburger */}
@@ -64,6 +65,7 @@ export default function Navbar() {
           <NavLink to="/projects" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Projects</NavLink>
           <NavLink to="/achievements" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Achievements</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Contact</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>About</NavLink>
         </div>
       </div>
     </header>

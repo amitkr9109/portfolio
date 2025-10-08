@@ -2,7 +2,7 @@ export default function ProjectCard({ title, description, tech = [], github, dem
   return (
     <article
       data-animate
-      className="rounded-none bg-[#1e293b]/80 text-white border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm p-4 sm:p-6 md:p-7 flex flex-col h-full"
+      className="rounded-none bg-[#1e293b]/80 text-white border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm p-4 sm:p-6 md:p-7 flex flex-col h-full hover:border-green-400/50 hover:shadow-[0_12px_40px_rgba(34,197,94,0.25)] transition-all duration-200 ease-out hover:-translate-y-0.5"
     >
       <header>
         <h3 className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight">{title}</h3>

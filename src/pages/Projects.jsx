@@ -61,7 +61,7 @@ export default function Projects() {
     <section data-section className="py-16 sm:py-20 md:py-28">
       <div className="container mx-auto px-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Projects</h1>
-        <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-gray-300">Showcase your best work here.</p>
+        <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-gray-300">Showcase our best work here.</p>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {projects.map((p) => (
             <ProjectCard key={p.title} {...p} />

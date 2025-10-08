@@ -4,7 +4,7 @@ export default function About() {
       <div className="container mx-auto px-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">About</h1>
         <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl">
-          A short bio and your skills.
+          A short bio and our skills.
         </p>
 
         <div className="mt-10 sm:mt-12 md:mt-16">
