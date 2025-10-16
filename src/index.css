@@ -9,7 +9,6 @@ body {
   @apply bg-black text-gray-200 antialiased;
 }
 
-/* Simple marquee styles for tech icons */
 .marquee {
   position: relative;
   overflow: hidden;

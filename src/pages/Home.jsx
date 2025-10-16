@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default function Home() {
+const Home = () => {
   useEffect(() => {
     document.title = 'Amit Kumar — Portfolio'
   }, [])
@@ -15,8 +15,8 @@ export default function Home() {
             <p className='text-sm sm:text-base md:text-lg text-gray-500 '>I build fast, accessible, and responsive web applications using React.js, Node.js, and Express.js. I am passionate about creating smooth user interfaces, maintaining excellent UI/UX, and writing clean, maintainable code. I craft modern user experiences while also delivering scalable backend integrations when needed.</p>
           </div>
         </div>
-        <div className="image group relative overflow-hidden rounded-xl lg:w-1/2 lg:h-[60vh] w-full h-[40vh] hover:border-2 hover:border-green-400">
-          <img className='w-full h-full object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105' src="https://i.postimg.cc/50tWr9F0/image-1.jpg" alt="Amit Kumar" />
+        <div className="image group relative overflow-hidden rounded-xl lg:w-1/2 lg:h-[60vh] w-full h-[40vh] hover:border-2 hover:border-green-400 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(34,197,94,0.25)]">
+          <img className='w-full h-full object-cover object-top transition-all duration-300 ease-in-out group-hover:scale-105' src="https://i.postimg.cc/50tWr9F0/image-1.jpg" alt="Amit Kumar" />
           <div className="pointer-events-none absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-60"></div>
         </div>
       </section>
@@ -46,3 +46,4 @@ export default function Home() {
   )
 }
 
+export default Home

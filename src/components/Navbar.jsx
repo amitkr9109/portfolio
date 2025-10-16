@@ -2,7 +2,8 @@ import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 
-export default function Navbar() {
+const Navbar = () => {
+  
   const navRef = useRef(null)
   const [open, setOpen] = useState(false)
 
@@ -27,13 +28,12 @@ export default function Navbar() {
     }
   }, [])
 
-  const baseTab = 'data-tab rounded-none border border-white/15 px-3 py-2 md:px-4 md:py-2.5 text-xs sm:text-sm text-gray-300 hover:text-white transition-colors'
+  const baseTab = 'data-tab rounded-md border border-white/15 px-3 py-2 md:px-4 md:py-2.5 text-xs sm:text-sm text-gray-300 hover:text-white transition-colors backdrop-blur-sm hover:border-green-400/50 transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(34,197,94,0.25)] active:scale-95'
 
   return (
     <header className="border-b border-white/10 bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-black/30 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="text-base sm:text-lg font-semibold">Amit Kumar</Link>
-        {/* Desktop nav */}
         <nav ref={navRef} className="hidden sm:flex items-center gap-2 md:gap-3 lg:gap-4">
           <NavLink to="/" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Home</NavLink>
           <NavLink to="/skills" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Skills</NavLink>
@@ -42,8 +42,6 @@ export default function Navbar() {
           <NavLink to="/contact" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>Contact</NavLink>
           <NavLink to="/about" className={({ isActive }) => `${baseTab} ${isActive ? 'border-green-400 text-white' : ''}`}>About</NavLink>
         </nav>
-
-        {/* Mobile hamburger */}
         <button
           type="button"
           aria-label="Open menu"
@@ -54,8 +52,6 @@ export default function Navbar() {
           ☰
         </button>
       </div>
-
-      {/* Mobile dropdown */}
       <div className={`${open ? 'block' : 'hidden'} sm:hidden border-t border-white/10 bg-black/70 backdrop-blur supports-[backdrop-filter]:bg-black/50`}
         onClick={() => setOpen(false)}
       >
@@ -72,3 +68,4 @@ export default function Navbar() {
   )
 }
 
+export default Navbar

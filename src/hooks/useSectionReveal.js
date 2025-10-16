@@ -28,4 +28,3 @@ export function useSectionReveal(selector = '[data-section]') {
     return () => ctx.revert()
   }, [selector])
 }
-

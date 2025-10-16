@@ -1,4 +1,7 @@
 import './App.css'
+import Lenis from 'lenis'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -7,10 +10,36 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Skills from './pages/Skills'
 import Achievements from './pages/Achievements'
-import { Routes, Route } from 'react-router-dom'
 import RainBackground from './components/RainBackground'
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+      smoothTouch: false,
+      direction: 'vertical',
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    const unlisten = () => {
+      lenis.scrollTo(0, { immediate: true })
+    }
+
+    unlisten()
+
+    return () => {
+      lenis.destroy()
+    }
+  }, [location.pathname])
+
   return (
     <div className="min-h-screen flex flex-col">
       <RainBackground />
